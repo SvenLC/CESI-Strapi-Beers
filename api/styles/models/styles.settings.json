@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "styles",
+  "info": {
+    "name": "Styles"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "text",
+      "unique": false,
+      "required": true
+    },
+    "ref_id": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "category": {
+      "model": "categories"
+    }
+  }
+}
