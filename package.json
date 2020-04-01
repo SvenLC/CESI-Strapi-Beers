@@ -6,6 +6,7 @@
   "scripts": {
     "develop": "strapi develop",
     "start": "strapi start",
+    "postinstall": "NODE_ENV=production npm run build",
     "build": "strapi build",
     "strapi": "strapi"
   },
